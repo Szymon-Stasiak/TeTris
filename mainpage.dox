@@ -1,0 +1,8 @@
+/** @mainpage
+* <p> This is a Tetris clone written in C++ using the SFML library. </p>
+* <p> The game is controlled using the arrow or WASD keys. </p>
+* <p> The game is restarted by pressing the "R" key. </p>
+* <p></p>
+
+*<a href="https://github.com/Szymon-Stasiak"> That's my GitHub </a>
+*/

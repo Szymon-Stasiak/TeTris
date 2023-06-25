@@ -1,0 +1,120 @@
+\hypertarget{class_block_movement}{}\doxysection{Block\+Movement Class Reference}
+\label{class_block_movement}\index{BlockMovement@{BlockMovement}}
+
+
+Class to move block.  
+
+
+
+
+{\ttfamily \#include $<$Block\+Movement.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_block_movement_ae95fc4ef4a298d5a2e3757f4666f7e78}\label{class_block_movement_ae95fc4ef4a298d5a2e3757f4666f7e78}} 
+{\bfseries Block\+Movement} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_block_movement_a357c6fe01afad5297fe8f3017bf51b04}{spawn\+New\+Block\+On\+The\+Board}} (\mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}} tetro\+Minos, int \&choose\+Brick, int \&next\+Brick, bool \&spawn\+New\+Block, \mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$current\+Position)
+\item 
+static void \mbox{\hyperlink{class_block_movement_a082922c7b44e254cb6ca637d3f59ae35}{move\+Block}} (int \&shift\+To\+Side, \mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$current\+Position, \mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$last\+Position)
+\item 
+static void \mbox{\hyperlink{class_block_movement_a1084da7a2940ed666fb958dc8a32dca2}{rotate\+Block}} (bool \&rotate, \mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$current\+Position, \mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$last\+Position)
+\item 
+static void \mbox{\hyperlink{class_block_movement_a9609b62fbfab7eb10a3151cbb80963a8}{falling\+Of\+The\+Block}} (float \&timer, float \&delay, \mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$current\+Position, \mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$last\+Position, int \&choose\+Brick, bool \&spawn\+New\+Block, int field\mbox{[}20\mbox{]}\mbox{[}10\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to move block. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_block_movement_a9609b62fbfab7eb10a3151cbb80963a8}\label{class_block_movement_a9609b62fbfab7eb10a3151cbb80963a8}} 
+\index{BlockMovement@{BlockMovement}!fallingOfTheBlock@{fallingOfTheBlock}}
+\index{fallingOfTheBlock@{fallingOfTheBlock}!BlockMovement@{BlockMovement}}
+\doxysubsubsection{\texorpdfstring{fallingOfTheBlock()}{fallingOfTheBlock()}}
+{\footnotesize\ttfamily void Block\+Movement\+::falling\+Of\+The\+Block (\begin{DoxyParamCaption}\item[{float \&}]{timer,  }\item[{float \&}]{delay,  }\item[{\mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$}]{current\+Position,  }\item[{\mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$}]{last\+Position,  }\item[{int \&}]{choose\+Brick,  }\item[{bool \&}]{spawn\+New\+Block,  }\item[{int}]{field\mbox{[}20\mbox{]}\mbox{[}10\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Falling of the block -\/ move block down
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & -\/ time from that depends if block should fall down \\
+\hline
+{\em delay} & -\/ delay of the block falling down , from that depend speed of block \\
+\hline
+{\em current\+Position} & -\/ current position of the block \\
+\hline
+{\em last\+Position} & -\/ last position of the block \\
+\hline
+{\em choose\+Brick} & -\/ number of the block \\
+\hline
+{\em spawn\+New\+Block} & -\/ boolean variable to spawn new block \\
+\hline
+{\em field} & -\/ game board \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_movement_a082922c7b44e254cb6ca637d3f59ae35}\label{class_block_movement_a082922c7b44e254cb6ca637d3f59ae35}} 
+\index{BlockMovement@{BlockMovement}!moveBlock@{moveBlock}}
+\index{moveBlock@{moveBlock}!BlockMovement@{BlockMovement}}
+\doxysubsubsection{\texorpdfstring{moveBlock()}{moveBlock()}}
+{\footnotesize\ttfamily void Block\+Movement\+::move\+Block (\begin{DoxyParamCaption}\item[{int \&}]{shift\+To\+Side,  }\item[{\mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$}]{current\+Position,  }\item[{\mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$}]{last\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Move block to chosen side
+
+
+\begin{DoxyParams}{Parameters}
+{\em shift\+To\+Side} & -\/ side to move block \\
+\hline
+{\em current\+Position} & -\/ current position of the block \\
+\hline
+{\em last\+Position} & -\/ last position of the block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_movement_a1084da7a2940ed666fb958dc8a32dca2}\label{class_block_movement_a1084da7a2940ed666fb958dc8a32dca2}} 
+\index{BlockMovement@{BlockMovement}!rotateBlock@{rotateBlock}}
+\index{rotateBlock@{rotateBlock}!BlockMovement@{BlockMovement}}
+\doxysubsubsection{\texorpdfstring{rotateBlock()}{rotateBlock()}}
+{\footnotesize\ttfamily void Block\+Movement\+::rotate\+Block (\begin{DoxyParamCaption}\item[{bool \&}]{rotate,  }\item[{\mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$}]{current\+Position,  }\item[{\mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$}]{last\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Rotate block
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotate} & -\/ boolean variable to rotate block \\
+\hline
+{\em current\+Position} & -\/ current position of the block \\
+\hline
+{\em last\+Position} & -\/ last position of the block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_movement_a357c6fe01afad5297fe8f3017bf51b04}\label{class_block_movement_a357c6fe01afad5297fe8f3017bf51b04}} 
+\index{BlockMovement@{BlockMovement}!spawnNewBlockOnTheBoard@{spawnNewBlockOnTheBoard}}
+\index{spawnNewBlockOnTheBoard@{spawnNewBlockOnTheBoard}!BlockMovement@{BlockMovement}}
+\doxysubsubsection{\texorpdfstring{spawnNewBlockOnTheBoard()}{spawnNewBlockOnTheBoard()}}
+{\footnotesize\ttfamily void Block\+Movement\+::spawn\+New\+Block\+On\+The\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}}}]{tetro\+Minos,  }\item[{int \&}]{choose\+Brick,  }\item[{int \&}]{next\+Brick,  }\item[{bool \&}]{spawn\+New\+Block,  }\item[{\mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$}]{current\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Spawn new block on the board
+
+
+\begin{DoxyParams}{Parameters}
+{\em tetro\+Minos} & -\/ object of class \mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}} -\/ gives shape and color of the block \\
+\hline
+{\em choose\+Brick} & -\/ number of the block \\
+\hline
+{\em next\+Brick} & -\/ number of the next block \\
+\hline
+{\em spawn\+New\+Block} & -\/ boolean variable to spawn new block \\
+\hline
+{\em current\+Position} & -\/ current position of the spawning block \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Block\+Movement.\+h\item 
+Block\+Movement.\+cpp\end{DoxyCompactItemize}

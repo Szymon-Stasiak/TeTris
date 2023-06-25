@@ -1,0 +1,39 @@
+\hypertarget{_drawing_game_8h_source}{}\doxysection{Drawing\+Game.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ stszy\ on\ 08.03.2023.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ TETRIS\_DRAWINGGAME\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ TETRIS\_DRAWINGGAME\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <SFML/Graphics/RenderWindow.hpp>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}TetroMinos.h"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}TeTris.h"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_drawing_game}{DrawingGame}}\ \{}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_drawing_game_ada1748146ecda4e4f199f444a88fc490}{drawCurrentBlock}}(sf::RenderWindow\ \&window,\ \mbox{\hyperlink{class_tetro_minos}{TetroMinos}}\ tetroMinos,\ \textcolor{keywordtype}{int}\ chooseBrick,\ \mbox{\hyperlink{struct_te_tris_1_1_point}{TeTris::Point}}\ *currentPosition);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_drawing_game_ab4d0deeb4aceb3114a04ec4c4cee02a9}{drawBackGround}}(sf::RenderWindow\ \&window,\ \textcolor{keywordtype}{int}\ tab[ROWS][COLUMNS]);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_drawing_game_a2d6826d92e5ee75ed262b8f698a56a85}{drawNextBlock}}(sf::RenderWindow\ \&window,\ \textcolor{keywordtype}{int}\ nextBrick);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_drawing_game_adf55388c5952600a74fd65486fbdcdf4}{drawScore}}(sf::RenderWindow\ \&window,\ \textcolor{keywordtype}{int}\ score,\ \textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_drawing_game_a2948a01c43cfd83429e185d80b6eb5ec}{drawSpeed}}(sf::RenderWindow\ \&window,\ \textcolor{keywordtype}{float}\ comeBackToDelay);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_drawing_game_a326e499863357b36c56ca2a65ae0a8b6}{drawRestart}}(sf::RenderWindow\ \&window,\ \textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_drawing_game_a9ba9894652e55f5d475287fe2ee331b0}{drawEnd}}(sf::RenderWindow\ \&window,\ \textcolor{keywordtype}{int}\ score);}
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//TETRIS\_DRAWINGGAME\_H}}
+
+\end{DoxyCode}

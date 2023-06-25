@@ -1,0 +1,127 @@
+\hypertarget{class_te_tris}{}\doxysection{Te\+Tris Class Reference}
+\label{class_te_tris}\index{TeTris@{TeTris}}
+
+
+Main class of the game -\/ responsible for the game logic.  
+
+
+
+
+{\ttfamily \#include $<$Te\+Tris.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_te_tris_1_1_point}{Point}}
+\begin{DoxyCompactList}\small\item\em Structure to store position of the block. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_te_tris_a4d0200012d760e223388c8ca7d8f0328}\label{class_te_tris_a4d0200012d760e223388c8ca7d8f0328}} 
+{\bfseries Te\+Tris} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_te_tris_add0ef587dcdd83adb7b059adeae6d82c}\label{class_te_tris_add0ef587dcdd83adb7b059adeae6d82c}} 
+static void {\bfseries start\+Te\+Tris\+Game} ()
+\begin{DoxyCompactList}\small\item\em Start game. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_te_tris_ae77bc08d98645ce5eb2c92ebc1512ba1}{display\+Update}} (sf\+::\+Render\+Window \&window)
+\item 
+static void \mbox{\hyperlink{class_te_tris_a82a1fdd44df8b3503541a547395f5339}{take\+Button\+Signal}} (sf\+::\+Render\+Window \&window)
+\item 
+\mbox{\Hypertarget{class_te_tris_a3c8160ad5cf442dc051f2bb76ed9cf89}\label{class_te_tris_a3c8160ad5cf442dc051f2bb76ed9cf89}} 
+static void {\bfseries delete\+Full\+Lines} ()
+\begin{DoxyCompactList}\small\item\em Delete lines full of blocks. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_te_tris_a5ddefe8fea8fbc8f107a69db920e2f52}{check\+If\+Game\+Is\+End}} (int field\mbox{[}ROWS\mbox{]}\mbox{[}COLUMNS\mbox{]}, sf\+::\+Render\+Window \&window)
+\item 
+\mbox{\Hypertarget{class_te_tris_acaee42d6647ef1ffd62919a934c0db5c}\label{class_te_tris_acaee42d6647ef1ffd62919a934c0db5c}} 
+static bool {\bfseries check\+If\+Object\+Is\+In\+Game\+Board} ()
+\begin{DoxyCompactList}\small\item\em Check if block is in game board. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_te_tris_ae0ebb70aa9888e3e7c11df4eb2a385f0}{every\+Move\+Of\+Block}} (float \&timer, \mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}} tetro\+Minos)
+\item 
+static void \mbox{\hyperlink{class_te_tris_a65ecf9e7a99a00bff9f756d634823c17}{display\+Game}} (sf\+::\+Render\+Window \&window, \mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}} tetro\+Minos)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main class of the game -\/ responsible for the game logic. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_te_tris_a5ddefe8fea8fbc8f107a69db920e2f52}\label{class_te_tris_a5ddefe8fea8fbc8f107a69db920e2f52}} 
+\index{TeTris@{TeTris}!checkIfGameIsEnd@{checkIfGameIsEnd}}
+\index{checkIfGameIsEnd@{checkIfGameIsEnd}!TeTris@{TeTris}}
+\doxysubsubsection{\texorpdfstring{checkIfGameIsEnd()}{checkIfGameIsEnd()}}
+{\footnotesize\ttfamily void Te\+Tris\+::check\+If\+Game\+Is\+End (\begin{DoxyParamCaption}\item[{int}]{field\mbox{[}\+ROWS\mbox{]}\mbox{[}\+COLUMNS\mbox{]},  }\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if game is end
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & -\/ game board \\
+\hline
+{\em window} & -\/ window to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_te_tris_a65ecf9e7a99a00bff9f756d634823c17}\label{class_te_tris_a65ecf9e7a99a00bff9f756d634823c17}} 
+\index{TeTris@{TeTris}!displayGame@{displayGame}}
+\index{displayGame@{displayGame}!TeTris@{TeTris}}
+\doxysubsubsection{\texorpdfstring{displayGame()}{displayGame()}}
+{\footnotesize\ttfamily void Te\+Tris\+::display\+Game (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}}}]{tetro\+Minos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Display every object of the game
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window to draw \\
+\hline
+{\em tetro\+Minos} & -\/ object of class \mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}} -\/ gives shape and color of the block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_te_tris_ae77bc08d98645ce5eb2c92ebc1512ba1}\label{class_te_tris_ae77bc08d98645ce5eb2c92ebc1512ba1}} 
+\index{TeTris@{TeTris}!displayUpdate@{displayUpdate}}
+\index{displayUpdate@{displayUpdate}!TeTris@{TeTris}}
+\doxysubsubsection{\texorpdfstring{displayUpdate()}{displayUpdate()}}
+{\footnotesize\ttfamily void Te\+Tris\+::display\+Update (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Update all game elements
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_te_tris_ae0ebb70aa9888e3e7c11df4eb2a385f0}\label{class_te_tris_ae0ebb70aa9888e3e7c11df4eb2a385f0}} 
+\index{TeTris@{TeTris}!everyMoveOfBlock@{everyMoveOfBlock}}
+\index{everyMoveOfBlock@{everyMoveOfBlock}!TeTris@{TeTris}}
+\doxysubsubsection{\texorpdfstring{everyMoveOfBlock()}{everyMoveOfBlock()}}
+{\footnotesize\ttfamily void Te\+Tris\+::every\+Move\+Of\+Block (\begin{DoxyParamCaption}\item[{float \&}]{timer,  }\item[{\mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}}}]{tetro\+Minos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Move block in any direction that is demanded
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer} & -\/ timer to move block \\
+\hline
+{\em tetro\+Minos} & -\/ object of class \mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}} -\/ gives shape and color of the block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_te_tris_a82a1fdd44df8b3503541a547395f5339}\label{class_te_tris_a82a1fdd44df8b3503541a547395f5339}} 
+\index{TeTris@{TeTris}!takeButtonSignal@{takeButtonSignal}}
+\index{takeButtonSignal@{takeButtonSignal}!TeTris@{TeTris}}
+\doxysubsubsection{\texorpdfstring{takeButtonSignal()}{takeButtonSignal()}}
+{\footnotesize\ttfamily void Te\+Tris\+::take\+Button\+Signal (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Take signal from the button
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window to draw \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Te\+Tris.\+h\item 
+Te\+Tris.\+cpp\end{DoxyCompactItemize}

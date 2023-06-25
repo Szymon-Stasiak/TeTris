@@ -1,0 +1,155 @@
+\hypertarget{class_drawing_game}{}\doxysection{Drawing\+Game Class Reference}
+\label{class_drawing_game}\index{DrawingGame@{DrawingGame}}
+
+
+Class responsible for drawing/displaying game.  
+
+
+
+
+{\ttfamily \#include $<$Drawing\+Game.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_drawing_game_ada1748146ecda4e4f199f444a88fc490}{draw\+Current\+Block}} (sf\+::\+Render\+Window \&window, \mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}} tetro\+Minos, int choose\+Brick, \mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$current\+Position)
+\item 
+static void \mbox{\hyperlink{class_drawing_game_ab4d0deeb4aceb3114a04ec4c4cee02a9}{draw\+Back\+Ground}} (sf\+::\+Render\+Window \&window, int tab\mbox{[}ROWS\mbox{]}\mbox{[}COLUMNS\mbox{]})
+\item 
+static void \mbox{\hyperlink{class_drawing_game_a2d6826d92e5ee75ed262b8f698a56a85}{draw\+Next\+Block}} (sf\+::\+Render\+Window \&window, int next\+Brick)
+\item 
+static void \mbox{\hyperlink{class_drawing_game_adf55388c5952600a74fd65486fbdcdf4}{draw\+Score}} (sf\+::\+Render\+Window \&window, int score, float x, float y)
+\item 
+static void \mbox{\hyperlink{class_drawing_game_a2948a01c43cfd83429e185d80b6eb5ec}{draw\+Speed}} (sf\+::\+Render\+Window \&window, float come\+Back\+To\+Delay)
+\item 
+static void \mbox{\hyperlink{class_drawing_game_a326e499863357b36c56ca2a65ae0a8b6}{draw\+Restart}} (sf\+::\+Render\+Window \&window, float x, float y)
+\item 
+static void \mbox{\hyperlink{class_drawing_game_a9ba9894652e55f5d475287fe2ee331b0}{draw\+End}} (sf\+::\+Render\+Window \&window, int score)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible for drawing/displaying game. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_drawing_game_ab4d0deeb4aceb3114a04ec4c4cee02a9}\label{class_drawing_game_ab4d0deeb4aceb3114a04ec4c4cee02a9}} 
+\index{DrawingGame@{DrawingGame}!drawBackGround@{drawBackGround}}
+\index{drawBackGround@{drawBackGround}!DrawingGame@{DrawingGame}}
+\doxysubsubsection{\texorpdfstring{drawBackGround()}{drawBackGround()}}
+{\footnotesize\ttfamily void Drawing\+Game\+::draw\+Back\+Ground (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{int}]{tab\mbox{[}\+ROWS\mbox{]}\mbox{[}\+COLUMNS\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Draw Back\+Ground
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window to draw \\
+\hline
+{\em tab} & -\/ game board \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_drawing_game_ada1748146ecda4e4f199f444a88fc490}\label{class_drawing_game_ada1748146ecda4e4f199f444a88fc490}} 
+\index{DrawingGame@{DrawingGame}!drawCurrentBlock@{drawCurrentBlock}}
+\index{drawCurrentBlock@{drawCurrentBlock}!DrawingGame@{DrawingGame}}
+\doxysubsubsection{\texorpdfstring{drawCurrentBlock()}{drawCurrentBlock()}}
+{\footnotesize\ttfamily void Drawing\+Game\+::draw\+Current\+Block (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{\mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}}}]{tetro\+Minos,  }\item[{int}]{choose\+Brick,  }\item[{\mbox{\hyperlink{struct_te_tris_1_1_point}{Te\+Tris\+::\+Point}} $\ast$}]{current\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Draw current block
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window to draw \\
+\hline
+{\em tetro\+Minos} & -\/ object of class \mbox{\hyperlink{class_tetro_minos}{Tetro\+Minos}} -\/ gives shape and color of the block \\
+\hline
+{\em choose\+Brick} & -\/ number of the block \\
+\hline
+{\em current\+Position} & -\/ current position of the block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_drawing_game_a9ba9894652e55f5d475287fe2ee331b0}\label{class_drawing_game_a9ba9894652e55f5d475287fe2ee331b0}} 
+\index{DrawingGame@{DrawingGame}!drawEnd@{drawEnd}}
+\index{drawEnd@{drawEnd}!DrawingGame@{DrawingGame}}
+\doxysubsubsection{\texorpdfstring{drawEnd()}{drawEnd()}}
+{\footnotesize\ttfamily void Drawing\+Game\+::draw\+End (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{int}]{score }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Draw endgame screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window to draw \\
+\hline
+{\em score} & -\/ current score \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_drawing_game_a2d6826d92e5ee75ed262b8f698a56a85}\label{class_drawing_game_a2d6826d92e5ee75ed262b8f698a56a85}} 
+\index{DrawingGame@{DrawingGame}!drawNextBlock@{drawNextBlock}}
+\index{drawNextBlock@{drawNextBlock}!DrawingGame@{DrawingGame}}
+\doxysubsubsection{\texorpdfstring{drawNextBlock()}{drawNextBlock()}}
+{\footnotesize\ttfamily void Drawing\+Game\+::draw\+Next\+Block (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{int}]{next\+Brick }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Draw next block
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window to draw \\
+\hline
+{\em next\+Brick} & -\/ number of the next block \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_drawing_game_a326e499863357b36c56ca2a65ae0a8b6}\label{class_drawing_game_a326e499863357b36c56ca2a65ae0a8b6}} 
+\index{DrawingGame@{DrawingGame}!drawRestart@{drawRestart}}
+\index{drawRestart@{drawRestart}!DrawingGame@{DrawingGame}}
+\doxysubsubsection{\texorpdfstring{drawRestart()}{drawRestart()}}
+{\footnotesize\ttfamily void Drawing\+Game\+::draw\+Restart (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Draw restart
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window to draw \\
+\hline
+{\em x} & -\/ x position of the restart inscription \\
+\hline
+{\em y} & -\/ y position of the restart inscription \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_drawing_game_adf55388c5952600a74fd65486fbdcdf4}\label{class_drawing_game_adf55388c5952600a74fd65486fbdcdf4}} 
+\index{DrawingGame@{DrawingGame}!drawScore@{drawScore}}
+\index{drawScore@{drawScore}!DrawingGame@{DrawingGame}}
+\doxysubsubsection{\texorpdfstring{drawScore()}{drawScore()}}
+{\footnotesize\ttfamily void Drawing\+Game\+::draw\+Score (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{int}]{score,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Draw score
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window to draw \\
+\hline
+{\em score} & -\/ current score \\
+\hline
+{\em x} & -\/ x position of the score counter \\
+\hline
+{\em y} & -\/ y position of the score counter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_drawing_game_a2948a01c43cfd83429e185d80b6eb5ec}\label{class_drawing_game_a2948a01c43cfd83429e185d80b6eb5ec}} 
+\index{DrawingGame@{DrawingGame}!drawSpeed@{drawSpeed}}
+\index{drawSpeed@{drawSpeed}!DrawingGame@{DrawingGame}}
+\doxysubsubsection{\texorpdfstring{drawSpeed()}{drawSpeed()}}
+{\footnotesize\ttfamily void Drawing\+Game\+::draw\+Speed (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{float}]{come\+Back\+To\+Delay }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Draw speed
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & -\/ window to draw \\
+\hline
+{\em come\+Back\+To\+Delay} & -\/ speed of the block \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Drawing\+Game.\+h\item 
+Drawing\+Game.\+cpp\end{DoxyCompactItemize}

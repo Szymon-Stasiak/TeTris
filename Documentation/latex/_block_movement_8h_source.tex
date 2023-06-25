@@ -1,0 +1,32 @@
+\hypertarget{_block_movement_8h_source}{}\doxysection{Block\+Movement.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TETRIS\_BLOCKMOVEMENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TETRIS\_BLOCKMOVEMENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}TetroMinos.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}TeTris.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_block_movement}{BlockMovement}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_block_movement_ae95fc4ef4a298d5a2e3757f4666f7e78}{BlockMovement}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_block_movement_a357c6fe01afad5297fe8f3017bf51b04}{spawnNewBlockOnTheBoard}}(\mbox{\hyperlink{class_tetro_minos}{TetroMinos}}\ tetroMinos,\ \textcolor{keywordtype}{int}\ \&chooseBrick,\ \textcolor{keywordtype}{int}\ \&nextBrick,\ \textcolor{keywordtype}{bool}\ \&spawnNewBlock,}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_te_tris_1_1_point}{TeTris::Point}}\ *currentPosition);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_block_movement_a082922c7b44e254cb6ca637d3f59ae35}{moveBlock}}(\textcolor{keywordtype}{int}\ \&shiftToSide,\ \mbox{\hyperlink{struct_te_tris_1_1_point}{TeTris::Point}}\ *currentPosition,\ \mbox{\hyperlink{struct_te_tris_1_1_point}{TeTris::Point}}\ *lastPosition);}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_block_movement_a1084da7a2940ed666fb958dc8a32dca2}{rotateBlock}}(\textcolor{keywordtype}{bool}\ \&rotate,\ \mbox{\hyperlink{struct_te_tris_1_1_point}{TeTris::Point}}\ *currentPosition,\ \mbox{\hyperlink{struct_te_tris_1_1_point}{TeTris::Point}}\ *lastPosition);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}}
+\DoxyCodeLine{00056\ \ \ \ \ \mbox{\hyperlink{class_block_movement_a9609b62fbfab7eb10a3151cbb80963a8}{fallingOfTheBlock}}(\textcolor{keywordtype}{float}\ \&timer,\ \textcolor{keywordtype}{float}\ \&delay,\ \mbox{\hyperlink{struct_te_tris_1_1_point}{TeTris::Point}}\ *currentPosition,\ \mbox{\hyperlink{struct_te_tris_1_1_point}{TeTris::Point}}\ *lastPosition,}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \&chooseBrick,\ \textcolor{keywordtype}{bool}\ \&spawnNewBlock,\ \textcolor{keywordtype}{int}\ field[20][10]);}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//TETRIS\_BLOCKMOVEMENT\_H}}
+
+\end{DoxyCode}

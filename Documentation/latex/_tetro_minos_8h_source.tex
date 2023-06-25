@@ -1,0 +1,47 @@
+\hypertarget{_tetro_minos_8h_source}{}\doxysection{Tetro\+Minos.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}Brick.h"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#ifndef\ TETRIS\_TETROMINOS\_H}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#define\ TETRIS\_TETROMINOS\_H}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_tetro_minos}{TetroMinos}}\ \{}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00017\ \ \ \ \ sf::Color\ \mbox{\hyperlink{class_tetro_minos_a570cdb89846794ff60ef0c56fd68a721}{getTetroColor}}(\textcolor{keywordtype}{int}\ random);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_tetro_minos_a27f7ea386783fa09a4828ae2d898129c}{getTetroShape}}(\textcolor{keywordtype}{int}\ random,\ \textcolor{keywordtype}{int}\ i);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ shapeOfMino[8][4]\ =\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ 0,\ 0,\ 0,\ 0,\textcolor{comment}{//empty}}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ 1,\ 3,\ 5,\ 7,\ \textcolor{comment}{//\ I}}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ 2,\ 4,\ 5,\ 7,\ \textcolor{comment}{//\ Z}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ 3,\ 5,\ 4,\ 6,\ \textcolor{comment}{//\ S}}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ 3,\ 5,\ 4,\ 7,\ \textcolor{comment}{//\ T}}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ 2,\ 3,\ 5,\ 7,\ \textcolor{comment}{//\ L}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ 3,\ 5,\ 7,\ 6,\ \textcolor{comment}{//\ J}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ 2,\ 3,\ 4,\ 5,\ \textcolor{comment}{//\ O}}
+\DoxyCodeLine{00040\ \ \ \ \ \};}
+\DoxyCodeLine{00042\ \ \ \ \ sf::Color\ colorOfMino[8]\ =\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Color(47,\ 50,\ 70),\textcolor{comment}{//color\ of\ the\ background\ brick}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Color(12,\ 177,\ 202),}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Color(192,\ 4,\ 4),}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Color(14,\ 178,\ 25),}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Color(146,\ 0,\ 182),}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Color(6,\ 18,\ 185),}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Color(233,\ 97,\ 0),}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ sf::Color(235,\ 219,\ 0)}
+\DoxyCodeLine{00051\ \ \ \ \ \};}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{class_brick}{Brick}}\ brick\ =\ \mbox{\hyperlink{class_brick}{Brick}}();}
+\DoxyCodeLine{00054\ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//TETRIS\_TETROMINOS\_H}}
+
+\end{DoxyCode}
